@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Satu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <div class="hero">
+        <div class="navbar">
+            <div class="nav-logo">
+                <img src="assets/Outcamplog.png">
+            </div>
+            
+            <nav>
+                
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">Gallery</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+
+                <div class="menu-toogle">
+                    <input type="checkbox">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                
+                <!-- <button type="button" class="btn">SIGN UP</button> -->
+            </nav>
+           
+        </div>
+
+        <div class="text-banner">
+            <h1>The night can’t bother
+                your journey</h1>
+            <h3>It’s warm, comfortable, and safe inside<h3>
+            <button type="button" class="btn">Shop Now</button>
+        </div>
+        <div class="vertical-bar">
+            <div class="search-icon">
+                <i class="fa fa-list-ul"></i>
+                <i class="fa fa-search"></i>
+            </div>
+            <div class="social-icon">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-pinterest-p"></i>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const menuToogle = document.querySelector('.menu-toogle input')
+        const nav = document.querySelector('nav ul');
+
+        menuToogle.addEventListener('click', function() {
+            nav.classList.toggle('slide');
+        });
+        
+    </script>
+
+</body>
+</html>
